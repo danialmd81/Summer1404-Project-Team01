@@ -15,7 +15,7 @@ public class SsoLoginUrlProviderTests
 	public SsoLoginUrlProviderTests()
 	{
 		_configuration = new ConfigurationManager();
-		_sut = new SsoLoginUrlProvider();
+		_sut = new SsoLoginUrlProvider(_configuration);
 	}
 
 	[Fact]
