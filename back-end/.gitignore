@@ -1,0 +1,50 @@
+# --- Build artifacts (dotnet)
+bin/
+obj/
+out/
+artifacts/
+*.dll
+*.exe
+*.pdb
+
+# --- Test / Coverage
+TestResults/
+.coverage
+.coveragexml
+coverage*/
+*.trx
+*.coverage
+
+# --- NuGet
+*.nupkg
+*.snupkg
+packages/
+
+# --- IDEs
+.vs/
+.idea/
+# VS Code
+.vscode/
+
+# --- OS junk
+*.DS_Store
+Thumbs.db
+
+# --- Logs & temps
+*.log
+logs/
+*.tmp
+tmp/
+
+# --- Docker / Compose
+*.env
+.env.*
+docker-data/
+**/node_modules/
+
+# --- User-specific
+*.user
+*.suo
+
+# --- App settings
+appsettings.*.local.json
