@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.REGISTRY_PASSWORD }}
 
       - name: Build frontend image
-        run: docker build -f etl_frontend/Dockerfile -t registry.dockerize.ir/${{ github.repository }}/frontend:$(date +%Y%m%d%H%M%S) ./frontend
+        run: docker build -f web/ETL/Dockerfile -t registry.dockerize.ir/${{ github.repository }}/frontend:$(date +%Y%m%d%H%M%S) ./frontend
 
       - name: Push frontend image
         run: docker push registry.dockerize.ir/${{ github.repository }}/frontend:$(date +%Y%m%d%H%M%S)
